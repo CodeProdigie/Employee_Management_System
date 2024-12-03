@@ -16,6 +16,7 @@ $tasks = $conn->query($query);
     <header>
         <h1>Manage Tasks</h1>
     </header>
+    
     <main>
         <table>
             <thead>
@@ -27,6 +28,7 @@ $tasks = $conn->query($query);
                     <th>Deadline</th>
                     <th>Status</th>
                     <th>Actions</th>
+                    <th>Assigned On</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,6 +49,7 @@ $tasks = $conn->query($query);
                 <?php endforeach; ?>
             </tbody>
         </table>
+        <a href="dashboard.php">Go back</a>
     </main>
 </body>
 </html>
