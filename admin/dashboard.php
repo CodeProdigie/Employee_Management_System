@@ -17,25 +17,25 @@ $employees = $conn->query($query);
 </head>
 <body>
     <header>
-        <h1>Admin Dashboard</h1>
+        <h1>Admin Control Panel</h1>
     </header>
     <main>
     <div class="sidebar">
         <div class="logo">
-            <img src="logo.png" alt="EMS Logo" class="logo-img"> <!-- Replace with actual logo -->
-            <h2>EMS Menu</h2>
+            <img src="../image/logo.jpg"  alt="EMS Logo" class="logo-img">
+            <h2>Mental Health Consulting</h2>
         </div>
         <nav>
             <ul>
                 <li><a href="./dashboard.php"><i class="icon">&#x1F464;</i> Create New Employee</a></li>
                 <li><a href="assign_task.php"><i class="icon">&#x1F4DD;</i> Assign Task</a></li>
+                <li><a href="view_employee.php"><i class="icon">&#x1F465;</i> View All Employees</a></li>
                 <li><a href="manage_task.php"><i class="icon">&#x1F4C5;</i> View All Tasks</a></li>
                 <li><a href="../logout.php"><i class="icon">&#x21BB;</i> Logout</a></li>
             </ul>
         </nav>
     </div>
     <div class="content">
-        <!-- Main content of the page goes here -->
     </div>
         <section class="section">
             <form action="create_employee.php" method="POST">
@@ -45,9 +45,9 @@ $employees = $conn->query($query);
                 <button type="submit">Add Employee</button>
             </form>
         </section>
-           <footer>
+           <!-- <footer>
     <p>&copy; Brandcode 2024</p>
-</footer>
+</footer> -->
 
     </main>
 </body>
